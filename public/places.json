@@ -1,0 +1,12 @@
+[
+  {
+    "position": {"lat": -9.650896, "lng": -35.705712},
+    "opened": false,
+    "info": "This is a fucking content, mother fucker!<br>Lorem ipsum."
+  },
+  {
+    "position": {"lat": -9.659461, "lng": -35.708530},
+    "opened": false,
+    "info": "<h3>This is another fucking content!</h3><br>Now with heading"
+  }
+]
