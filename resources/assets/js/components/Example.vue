@@ -28,7 +28,7 @@
                                 :position="m.position"
                                 :clickable="true"
                                 :draggable="false"
-                                @g-click="m.opened=true"
+                                @g-click="showInfo(m)"
                             >
                                 <info-window
                                     :content="m.info"
@@ -50,6 +50,14 @@
         data() {
             return {
                 markers: []
+            }
+        },
+        methods: {
+            showInfo(marker) {
+                _.map(this.markers, (m) => {
+                    m.opened = false;
+                });
+                marker.opened = true;
             }
         },
         ready() {
