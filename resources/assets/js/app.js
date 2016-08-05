@@ -13,16 +13,7 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-const VueGoogleMap = require('vue-google-maps');
-
-VueGoogleMap.load({
-    key: 'YOUR-KEY'
-});
-
-Vue.component('map', VueGoogleMap.Map);
-Vue.component('marker', VueGoogleMap.Marker);
-Vue.component('info-window', VueGoogleMap.InfoWindow);
+Vue.component('dashboard', require('./components/Dashboard.vue'));
 
 var app = new Vue({
     el: 'body'

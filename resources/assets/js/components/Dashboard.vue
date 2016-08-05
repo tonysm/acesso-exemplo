@@ -46,7 +46,16 @@
 </template>
 
 <script>
+    import {load, Map, Marker, InfoWindow} from 'vue-google-maps';
+
+    load(GOOGLE_API_KEY);
+
     export default {
+        components: {
+            'map': Map,
+            'marker': Marker,
+            'info-window': InfoWindow
+        },
         data() {
             return {
                 markers: []

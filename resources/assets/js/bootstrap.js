@@ -31,3 +31,8 @@ Vue.http.interceptors.push(function (request, next) {
 
     next();
 });
+
+/**
+ * get the API key for google maps
+ */
+window.GOOGLE_API_KEY = $('meta[name="google_api_key"]')[0].content;
